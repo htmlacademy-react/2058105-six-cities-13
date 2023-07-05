@@ -1,7 +1,7 @@
 # Личный проект «Шесть городов»
 
 * Студент: [Анастасия Митрофанова](https://up.htmlacademy.ru/react/13/user/2058105).
-* Наставник: `Неизвестно`.
+* Наставник: [Arthur Litovko](https://htmlacademy.ru/profile/id6927).
 
 ---
 
