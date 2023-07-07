@@ -1,6 +1,6 @@
 # Личный проект «Шесть городов»
 
-* Студент: [Алексей Черных](https://up.htmlacademy.ru/react/13/user/1290801).
+* Студент: [Анастасия Митрофанова](https://htmlacademy.ru/profile/id2058105).
 * Наставник: [Артур Литовко](https://htmlacademy.ru/profile/id6927).
 
 ---
