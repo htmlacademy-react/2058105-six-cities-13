@@ -1,15 +1,13 @@
-import Card from "../../components/card";
-import Location from "../../components/locations";
+import Card from '../../components/card';
+import Location from '../../components/locations';
 
 type MainPageProps = {
 	offersCount: number;
-  }
-  
+}
 
-  
-  function MainPage({offersCount}: MainPageProps): JSX.Element {
-    return (
-      <div className="page page--gray page--main">
+function MainPage({offersCount}: MainPageProps): JSX.Element {
+	return (
+		<div className="page page--gray page--main">
 			<header className="header">
 				<div className="container">
 					<div className="header__wrapper">
@@ -74,9 +72,9 @@ type MainPageProps = {
 								</ul>
 							</form>
 							<div className="cities__places-list places__list tabs__content">
-                              <Card />
+								<Card />
 							  <Card />
-                              <Card />
+								<Card />
 							  <Card />
 							  <Card />
 							</div>
@@ -88,7 +86,7 @@ type MainPageProps = {
 				</div>
 			</main>
 		</div>
-    );
-  }
-  
-  export default MainPage;
+	);
+}
+
+export default MainPage;
