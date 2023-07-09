@@ -1,6 +1,13 @@
 import Card from "../../components/card";
+import Location from "../../components/locations";
+
+type MainPageProps = {
+	offersCount: number;
+  }
   
-  function MainPage(): JSX.Element {
+
+  
+  function MainPage({offersCount}: MainPageProps): JSX.Element {
     return (
       <div className="page page--gray page--main">
 			<header className="header">
@@ -37,36 +44,12 @@ import Card from "../../components/card";
 				<div className="tabs">
 					<section className="locations container">
 						<ul className="locations__list tabs__list">
-							<li className="locations__item">
-								<a className="locations__item-link tabs__item" href="#">
-									<span>Paris</span>
-								</a>
-							</li>
-							<li className="locations__item">
-								<a className="locations__item-link tabs__item" href="#">
-									<span>Cologne</span>
-								</a>
-							</li>
-							<li className="locations__item">
-								<a className="locations__item-link tabs__item" href="#">
-									<span>Brussels</span>
-								</a>
-							</li>
-							<li className="locations__item">
-								<a className="locations__item-link tabs__item tabs__item--active">
-									<span>Amsterdam</span>
-								</a>
-							</li>
-							<li className="locations__item">
-								<a className="locations__item-link tabs__item" href="#">
-									<span>Hamburg</span>
-								</a>
-							</li>
-							<li className="locations__item">
-								<a className="locations__item-link tabs__item" href="#">
-									<span>Dusseldorf</span>
-								</a>
-							</li>
+							<Location />
+							<Location />
+							<Location />
+							<Location />
+							<Location />
+							<Location />
 						</ul>
 					</section>
 				</div>
@@ -74,7 +57,7 @@ import Card from "../../components/card";
 					<div className="cities__places-container container">
 						<section className="cities__places places">
 							<h2 className="visually-hidden">Places</h2>
-							<b className="places__found">312 places to stay in Amsterdam</b>
+							<b className="places__found">{offersCount} places to stay in Amsterdam</b>
 							<form className="places__sorting" action="#" method="get">
 								<span className="places__sorting-caption">Sort by</span>
 								<span className="places__sorting-type" tabIndex={0}>
@@ -91,7 +74,11 @@ import Card from "../../components/card";
 								</ul>
 							</form>
 							<div className="cities__places-list places__list tabs__content">
-                <Card />
+                              <Card />
+							  <Card />
+                              <Card />
+							  <Card />
+							  <Card />
 							</div>
 						</section>
 						<div className="cities__right-section">
