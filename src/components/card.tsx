@@ -1,6 +1,6 @@
 import cards from "../mocks/mocks";
 
-type PageProps = {
+type CardProps = {
 	card: {
 		id: string,
 		title: string,
@@ -8,7 +8,7 @@ type PageProps = {
         type: string,
 		previewImage: string,
 		isFavorite: boolean,
-		isPremium: boolean,
+		isPremium?: boolean,
 		rating: number,
 		city: {
 			name: string,
@@ -20,13 +20,13 @@ type PageProps = {
 	    };
     }
 }
-
-function Card ({card}:  PageProps): JSX.Element {
+ 
+function Card ({card}:  CardProps): JSX.Element {
 	return (
 		<article className="cities__card place-card">
-			{card.isPremium ? <div className="place-card__mark">
+			{card.isPremium && <div className="place-card__mark">
 				<span>Premium</span>
-			</div> : ''}
+			</div>}
 		
 			<div className="cities__image-wrapper place-card__image-wrapper">
 				<a href="#">
@@ -49,7 +49,7 @@ function Card ({card}:  PageProps): JSX.Element {
 				</div>
 				<div className="place-card__rating rating">
 					<div className="place-card__stars rating__stars">
-						<span style={{width: '80%'}}></span>
+						<span style={{width: `${card.rating * 20}%`}}></span>
 						<span className="visually-hidden">Rating</span>
 					</div>
 				</div>
@@ -62,6 +62,6 @@ function Card ({card}:  PageProps): JSX.Element {
 	);
 }
 
-const cardList = cards.map(card => <Card card={card}/>)
+const cardList = cards.map(card => <Card card={card} key={card.id}/>)
 
 export default cardList;
