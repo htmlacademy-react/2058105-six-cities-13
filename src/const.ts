@@ -9,6 +9,6 @@ const CITIES = [
 	'Amsterdam',
 	'Hamburg',
 	'Dusseldorf'
-];
+] as const;
 
 export {Setting, CITIES};
