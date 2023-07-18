@@ -11,4 +11,11 @@ const CITIES = [
 	'Dusseldorf'
 ] as const;
 
-export {Setting, CITIES};
+const AppRoute = {
+	Root: '/',
+	Login: '/login',
+	Favorites: '/favorites',
+	Offer: '/offer/:id',
+  } as const;
+
+export {Setting, CITIES, AppRoute};

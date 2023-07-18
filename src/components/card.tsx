@@ -1,5 +1,3 @@
-import cards from "../mocks/mocks";
-
 type CardProps = {
 	card: {
 		id: string,
@@ -40,7 +38,7 @@ function Card ({card}:  CardProps): JSX.Element {
 						<span className="place-card__price-text">&#47;&nbsp;night</span>
 					</div>
 					<button className={`place-card__bookmark-button button
-					 ${card.isFavorite ? 'place-card__bookmark-button--active' : ''}`} type="button">
+					 ${card.isFavorite && 'place-card__bookmark-button--active'}`} type="button">
 						<svg className="place-card__bookmark-icon" width="18" height="19">
 							<use xlinkHref="#icon-bookmark"></use>
 						</svg>
@@ -62,6 +60,4 @@ function Card ({card}:  CardProps): JSX.Element {
 	);
 }
 
-const cardList = cards.map(card => <Card card={card} key={card.id}/>)
-
-export default cardList;
+export default Card;

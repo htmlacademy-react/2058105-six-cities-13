@@ -1,4 +1,5 @@
-import cardList from '../../components/card';
+import Card from '../../components/card';
+import cards from '../../mocks/mocks';
 import Locations from '../../components/locations';
 
 type MainPageProps = {
@@ -61,7 +62,7 @@ function MainPage({offersCount}: MainPageProps): JSX.Element {
 								</ul>
 							</form>
 							<div className="cities__places-list places__list tabs__content">
-							{cardList}
+							{cards.map(card => <Card card={card} key={card.id}/>)}
 							</div>
 						</section>
 						<div className="cities__right-section">
