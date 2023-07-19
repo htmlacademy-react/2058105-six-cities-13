@@ -12,7 +12,7 @@ const CITIES = [
 ] as const;
 
 const AppRoute = {
-	Root: '/',
+	Main: '/',
 	Login: '/login',
 	Favorites: '/favorites',
 	Offer: '/offer/:id',

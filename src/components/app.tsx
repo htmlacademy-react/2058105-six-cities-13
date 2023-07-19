@@ -18,7 +18,7 @@ function App({offersCount}: AppOfferProps): JSX.Element {
 		<HelmetProvider>
 			<BrowserRouter>
 		    	<Routes>
-					<Route path={AppRoute.Root} element={<MainPage offersCount={offersCount} />} />
+					<Route path={AppRoute.Main} element={<MainPage offersCount={offersCount} />} />
 					<Route path={AppRoute.Login} element={<LoginPage />} />
 					<Route path={AppRoute.Offer} element={<OfferPage />} />
 					<Route path={AppRoute.Favorites} element={<FavoritesPage />} />
