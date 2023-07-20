@@ -11,10 +11,9 @@ function MainPage({offersCount}: MainPageProps): JSX.Element {
 	return (
 		<div className="page page--gray page--main">
 			<Header />
-
 			<main className="page__main page__main--index">
 				<h1 className="visually-hidden">Cities</h1>
-				<Locations/>
+				<Locations />
 				<div className="cities">
 					<div className="cities__places-container container">
 						<section className="cities__places places">
@@ -36,7 +35,7 @@ function MainPage({offersCount}: MainPageProps): JSX.Element {
 								</ul>
 							</form>
 							<div className="cities__places-list places__list tabs__content">
-							{cards.map(card => <Card card={card} key={card.id}/>)}
+								{cards.map((card) => <Card card={card} key={card.id}/>)}
 							</div>
 						</section>
 						<div className="cities__right-section">

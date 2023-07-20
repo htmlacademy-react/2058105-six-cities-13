@@ -16,6 +16,12 @@ const AppRoute = {
 	Login: '/login',
 	Favorites: '/favorites',
 	Offer: '/offer/:id',
-  } as const;
+} as const;
 
-export {Setting, CITIES, AppRoute};
+enum AuthorizationStatus {
+	Auth = 'AUTH',
+	NoAuth = 'NO_AUTH',
+	Unknown = 'UNKNOWN',
+}
+
+export {Setting, CITIES, AppRoute, AuthorizationStatus};

@@ -10,21 +10,21 @@ import NotFoundPage from '../pages/not-found-page/not-found-page';
 //import OfferUnloggedPage from '../pages/offer-unlogged-page/offer-unlogged-page';
 
 type AppOfferProps = {
-    offersCount: number;
-  }
+	offersCount: number;
+}
 
 function App({offersCount}: AppOfferProps): JSX.Element {
 	return (
 		<HelmetProvider>
 			<BrowserRouter>
-		    	<Routes>
+				<Routes>
 					<Route path={AppRoute.Main} element={<MainPage offersCount={offersCount} />} />
 					<Route path={AppRoute.Login} element={<LoginPage />} />
 					<Route path={AppRoute.Offer} element={<OfferPage />} />
 					<Route path={AppRoute.Favorites} element={<FavoritesPage />} />
 					<Route path="*" element={<NotFoundPage />} />
 				</Routes>
-		    </BrowserRouter>
+			</BrowserRouter>
 		</HelmetProvider>
 	);
 }
