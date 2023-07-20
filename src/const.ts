@@ -18,7 +18,7 @@ const AppRoute = {
 	Offer: '/offer/:id',
 } as const;
 
-enum AuthorizationStatus {
+const enum AuthorizationStatus {
 	Auth = 'AUTH',
 	NoAuth = 'NO_AUTH',
 	Unknown = 'UNKNOWN',
