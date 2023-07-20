@@ -4,7 +4,7 @@ import { AppRoute } from '../../const';
 
 function NotFoundPage(): JSX.Element {
 	return (
-		<section className="Error" style={{textAlign: 'center', margin: `200px`}}>
+		<section className="Error" style={{textAlign: 'center', margin: '200px'}}>
 			<Helmet>
 				<title>Страница не найдена.</title>
 			</Helmet>

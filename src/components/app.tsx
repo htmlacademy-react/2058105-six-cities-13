@@ -10,7 +10,6 @@ import OfferPage from '../pages/offer-page/offer-page';
 import NotFoundPage from '../pages/not-found-page/not-found-page';
 //import OfferUnloggedPage from '../pages/offer-unlogged-page/offer-unlogged-page';
 
-
 type AppOfferProps = {
 	offersCount: number;
 }
