@@ -1,4 +1,6 @@
-const cards = [
+import { CardProps } from "../components/card/type";
+
+const cards: CardProps[] = [
 	{
 		'id': 'dd2814d2-e81b-4bb5-8651-98b5e4d18730',
 		'title': 'The Pondhouse - A Magical Place',

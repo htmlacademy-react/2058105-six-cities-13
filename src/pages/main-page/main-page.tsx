@@ -1,13 +1,14 @@
-import Card from '../../components/card';
-import cards from '../../mocks/mocks';
+import Card from '../../components/card/card';
 import Locations from '../../components/locations';
 import Header from '../../components/header';
+import { CardProps } from '../../components/card/type';
 
 type MainPageProps = {
 	offersCount: number;
+	cards: CardProps[]
 }
 
-function MainPage({offersCount}: MainPageProps): JSX.Element {
+function MainPage({offersCount, cards}: MainPageProps): JSX.Element {
 	return (
 		<div className="page page--gray page--main">
 			<Header />
@@ -35,7 +36,7 @@ function MainPage({offersCount}: MainPageProps): JSX.Element {
 								</ul>
 							</form>
 							<div className="cities__places-list places__list tabs__content">
-								{cards.map((card) => <Card card={card} key={card.id}/>)}
+								{cards.map((card) => <Card {...card} key={card.id}/>)}
 							</div>
 						</section>
 						<div className="cities__right-section">

@@ -8,25 +8,23 @@ import FavoritesPage from '../pages/favorites-page/favorutes-page';
 import LoginPage from '../pages/login-page/login-page';
 import OfferPage from '../pages/offer-page/offer-page';
 import NotFoundPage from '../pages/not-found-page/not-found-page';
-//import OfferUnloggedPage from '../pages/offer-unlogged-page/offer-unlogged-page';
+import { CardProps } from './card/type';
+
 
 type AppOfferProps = {
 	offersCount: number;
+	cards: CardProps[];
 }
 
-function App({offersCount}: AppOfferProps): JSX.Element {
+function App({offersCount, cards}: AppOfferProps): JSX.Element {
 	return (
 		<HelmetProvider>
 			<BrowserRouter>
 				<Routes>
-					<Route path={AppRoute.Main} element={<MainPage offersCount={offersCount} />} />
+					<Route path={AppRoute.Main} element={<MainPage offersCount={offersCount} cards = {cards}/>} />
 					<Route path={AppRoute.Login} element={<LoginPage />} />
-					<Route path={AppRoute.Offer} element={<PrivateRoute authorizationStatus={AuthorizationStatus.NoAuth}>
-						<OfferPage />
-					</PrivateRoute>} />
-					<Route path={AppRoute.Favorites} element={<PrivateRoute authorizationStatus={AuthorizationStatus.NoAuth}>
-						<FavoritesPage />
-					</PrivateRoute>} />
+					<Route path={AppRoute.Offer} element={<PrivateRoute authorizationStatus={AuthorizationStatus.Auth}><OfferPage /></PrivateRoute>} />
+					<Route path={AppRoute.Favorites} element={<PrivateRoute authorizationStatus={AuthorizationStatus.Auth}><FavoritesPage /></PrivateRoute>} />
 					<Route path="*" element={<NotFoundPage />} />
 				</Routes>
 			</BrowserRouter>
