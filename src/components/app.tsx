@@ -12,19 +12,18 @@ import { CardProps } from './card/type';
 
 
 type AppOfferProps = {
-	offersCount: number;
 	cards: CardProps[];
 }
 
-function App({offersCount, cards}: AppOfferProps): JSX.Element {
+function App({cards}: AppOfferProps): JSX.Element {
 	return (
 		<HelmetProvider>
 			<BrowserRouter>
 				<Routes>
-					<Route path={AppRoute.Main} element={<MainPage offersCount={offersCount} cards = {cards}/>} />
+					<Route path={AppRoute.Main} element={<MainPage cards = {cards}/>} />
 					<Route path={AppRoute.Login} element={<LoginPage />} />
 					<Route path={AppRoute.Offer} element={<PrivateRoute authorizationStatus={AuthorizationStatus.Auth}><OfferPage /></PrivateRoute>} />
-					<Route path={AppRoute.Favorites} element={<PrivateRoute authorizationStatus={AuthorizationStatus.Auth}><FavoritesPage /></PrivateRoute>} />
+					<Route path={AppRoute.Favorites} element={<PrivateRoute authorizationStatus={AuthorizationStatus.Auth}><FavoritesPage cards={cards}/></PrivateRoute>} />
 					<Route path="*" element={<NotFoundPage />} />
 				</Routes>
 			</BrowserRouter>

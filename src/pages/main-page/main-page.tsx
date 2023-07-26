@@ -1,25 +1,54 @@
 import Card from '../../components/card/card';
-import Locations from '../../components/locations';
 import Header from '../../components/header';
 import { CardProps } from '../../components/card/type';
+import { CITIES } from '../../const';
+import { useState } from 'react';
 
-type MainPageProps = {
-	offersCount: number;
+
+export type MainPageProps = {
 	cards: CardProps[]
 }
 
-function MainPage({offersCount, cards}: MainPageProps): JSX.Element {
+function MainPage({cards}: MainPageProps): JSX.Element {
+	const offersSorted : Record<string, CardProps[]> = {};
+
+	for(const card of cards) {
+		const city = card.city.name;
+		if(city in offersSorted) {
+			offersSorted[city].push(card);
+			continue;
+		}
+		offersSorted[city] = [card];
+		continue;
+	}
+
+	const cities = Object.keys(offersSorted);
+	const [selectedCity, setCity] = useState(cities[0])
+
 	return (
 		<div className="page page--gray page--main">
 			<Header />
 			<main className="page__main page__main--index">
 				<h1 className="visually-hidden">Cities</h1>
-				<Locations />
+				<div className="tabs">
+			<section className="locations container">
+				<ul className="locations__list tabs__list">
+					{cities.map((city) => (
+						<li key={city} className="locations__item">
+							<a className={`locations__item-link tabs__item ${city === selectedCity ? 'tabs__item--active' : ''}`}
+							onClick={() => setCity(city)} href={`#${city.toLocaleLowerCase()}`}>
+								<span>{city}</span>
+							</a>
+						</li>
+					))}
+				</ul>
+			</section>
+		</div>
 				<div className="cities">
 					<div className="cities__places-container container">
 						<section className="cities__places places">
 							<h2 className="visually-hidden">Places</h2>
-							<b className="places__found">{offersCount} places to stay in Amsterdam</b>
+							<b className="places__found">{offersSorted[selectedCity].length} places to stay in Amsterdam</b>
 							<form className="places__sorting" action="#" method="get">
 								<span className="places__sorting-caption">Sort by</span>{' '}
 								<span className="places__sorting-type" tabIndex={0}>
@@ -36,7 +65,7 @@ function MainPage({offersCount, cards}: MainPageProps): JSX.Element {
 								</ul>
 							</form>
 							<div className="cities__places-list places__list tabs__content">
-								{cards.map((card) => <Card {...card} key={card.id}/>)}
+								{offersSorted[selectedCity].map((card) => <Card {...card} key={card.id}/>)}
 							</div>
 						</section>
 						<div className="cities__right-section">
