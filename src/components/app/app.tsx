@@ -1,14 +1,14 @@
 import {Route, BrowserRouter, Routes} from 'react-router-dom';
 import {HelmetProvider} from 'react-helmet-async';
 
-import {AppRoute, AuthorizationStatus} from '../const';
-import PrivateRoute from '../components/private-route/private-route';
-import MainPage from '../pages/main-page/main-page';
-import FavoritesPage from '../pages/favorites-page/favorutes-page';
-import LoginPage from '../pages/login-page/login-page';
-import OfferPage from '../pages/offer-page/offer-page';
-import NotFoundPage from '../pages/not-found-page/not-found-page';
-import { CardProps } from './card/type';
+import {AppRoute, AuthorizationStatus} from '../../const';
+import PrivateRoute from '../private-route/private-route';
+import MainPage from '../../pages/main-page/main-page';
+import FavoritesPage from '../../pages/favorites-page/favorutes-page';
+import LoginPage from '../../pages/login-page/login-page';
+import OfferPage from '../../pages/offer-page/offer-page';
+import NotFoundPage from '../../pages/not-found-page/not-found-page';
+import { CardProps } from '../card/type';
 
 
 type AppOfferProps = {

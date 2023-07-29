@@ -1,4 +1,4 @@
-import { CardProps } from "../components/card/type";
+import { CardProps } from '../components/card/type';
 
 const cards: CardProps[] = [
 	{
@@ -2737,29 +2737,6 @@ const cards: CardProps[] = [
 		'isFavorite': false,
 		'isPremium': false,
 		'rating': 4.4
-	},
-	{
-		'id': '017cc55b-a747-4dbd-824d-0bcb9473f4c5',
-		'title': 'The Joshua Tree House',
-		'type': 'hotel',
-		'price': 237,
-		'previewImage': 'https://13.design.pages.academy/static/hotel/11.jpg',
-		'city': {
-			'name': 'Dusseldorf',
-			'location': {
-				'latitude': 51.225402,
-				'longitude': 6.776314,
-				'zoom': 13
-			}
-		},
-		'location': {
-			'latitude': 51.225402,
-			'longitude': 6.784314,
-			'zoom': 16
-		},
-		'isFavorite': false,
-		'isPremium': false,
-		'rating': 2.8
 	}
 ];
 

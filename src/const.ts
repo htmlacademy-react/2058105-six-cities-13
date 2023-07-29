@@ -1,4 +1,4 @@
-const CITIES = [
+const cities = [
 	'Paris',
 	'Cologne',
 	'Brussels',
@@ -20,4 +20,4 @@ const enum AuthorizationStatus {
 	Unknown = 'UNKNOWN',
 }
 
-export {CITIES, AppRoute, AuthorizationStatus};
+export {cities, AppRoute, AuthorizationStatus};

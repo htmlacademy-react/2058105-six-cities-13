@@ -1,5 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
-import { AppRoute } from '../const';
+import { AppRoute } from '../../const';
 
 type HeaderProps = {
 	HideNavigation?: boolean;

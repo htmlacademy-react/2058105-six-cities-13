@@ -1,12 +1,12 @@
 import Card from '../../components/card/card';
-import Header from '../../components/header';
+import Header from '../../components/header/header';
 import { CardProps } from '../../components/card/type';
-import { CITIES } from '../../const';
 import { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 
 export type MainPageProps = {
-	cards: CardProps[]
+	cards: CardProps[];
 }
 
 function MainPage({cards}: MainPageProps): JSX.Element {
@@ -23,32 +23,36 @@ function MainPage({cards}: MainPageProps): JSX.Element {
 	}
 
 	const cities = Object.keys(offersSorted);
-	const [selectedCity, setCity] = useState(cities[0])
+	const [selectedCity, setCity] = useState(cities[0]);
 
 	return (
 		<div className="page page--gray page--main">
+			<Helmet>
+				<title>6 Cities</title>
+			</Helmet>
 			<Header />
 			<main className="page__main page__main--index">
 				<h1 className="visually-hidden">Cities</h1>
 				<div className="tabs">
-			<section className="locations container">
-				<ul className="locations__list tabs__list">
-					{cities.map((city) => (
-						<li key={city} className="locations__item">
-							<a className={`locations__item-link tabs__item ${city === selectedCity ? 'tabs__item--active' : ''}`}
-							onClick={() => setCity(city)} href={`#${city.toLocaleLowerCase()}`}>
-								<span>{city}</span>
-							</a>
-						</li>
-					))}
-				</ul>
-			</section>
-		</div>
+					<section className="locations container">
+						<ul className="locations__list tabs__list">
+							{cities.map((city) => (
+								<li key={city} className="locations__item">
+									<a className={`locations__item-link tabs__item ${city === selectedCity ? 'tabs__item--active' : ''}`}
+										onClick={() => setCity(city)} href={`#${city.toLocaleLowerCase()}`}
+									>
+										<span>{city}</span>
+									</a>
+								</li>
+							))}
+						</ul>
+					</section>
+				</div>
 				<div className="cities">
 					<div className="cities__places-container container">
 						<section className="cities__places places">
 							<h2 className="visually-hidden">Places</h2>
-							<b className="places__found">{offersSorted[selectedCity].length} places to stay in Amsterdam</b>
+							<b className="places__found">{offersSorted[selectedCity].length} places to stay in {selectedCity}</b>
 							<form className="places__sorting" action="#" method="get">
 								<span className="places__sorting-caption">Sort by</span>{' '}
 								<span className="places__sorting-type" tabIndex={0}>
@@ -65,7 +69,7 @@ function MainPage({cards}: MainPageProps): JSX.Element {
 								</ul>
 							</form>
 							<div className="cities__places-list places__list tabs__content">
-								{offersSorted[selectedCity].map((card) => <Card {...card} key={card.id}/>)}
+								{offersSorted[selectedCity].map((card) => <Card {...card} key={card.id} />)}
 							</div>
 						</section>
 						<div className="cities__right-section">
