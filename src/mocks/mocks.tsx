@@ -468,7 +468,7 @@ const cards: CardProps[] = [
 		'price': 289,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/20.jpg',
 		'city': {
-			'name': 'Cologne',
+			'name': 'Paris',
 			'location': {
 				'latitude': 50.938361,
 				'longitude': 6.959974,
@@ -491,7 +491,7 @@ const cards: CardProps[] = [
 		'price': 150,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/12.jpg',
 		'city': {
-			'name': 'Cologne',
+			'name': 'Paris',
 			'location': {
 				'latitude': 50.938361,
 				'longitude': 6.959974,
@@ -514,7 +514,7 @@ const cards: CardProps[] = [
 		'price': 349,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/4.jpg',
 		'city': {
-			'name': 'Cologne',
+			'name': 'Paris',
 			'location': {
 				'latitude': 50.938361,
 				'longitude': 6.959974,
@@ -537,7 +537,7 @@ const cards: CardProps[] = [
 		'price': 316,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/19.jpg',
 		'city': {
-			'name': 'Cologne',
+			'name': 'Paris',
 			'location': {
 				'latitude': 50.938361,
 				'longitude': 6.959974,
@@ -560,7 +560,7 @@ const cards: CardProps[] = [
 		'price': 975,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/16.jpg',
 		'city': {
-			'name': 'Cologne',
+			'name': 'Paris',
 			'location': {
 				'latitude': 50.938361,
 				'longitude': 6.959974,
@@ -583,7 +583,7 @@ const cards: CardProps[] = [
 		'price': 236,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/8.jpg',
 		'city': {
-			'name': 'Cologne',
+			'name': 'Paris',
 			'location': {
 				'latitude': 50.938361,
 				'longitude': 6.959974,
@@ -606,7 +606,7 @@ const cards: CardProps[] = [
 		'price': 259,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/16.jpg',
 		'city': {
-			'name': 'Cologne',
+			'name': 'Paris',
 			'location': {
 				'latitude': 50.938361,
 				'longitude': 6.959974,
@@ -629,7 +629,7 @@ const cards: CardProps[] = [
 		'price': 786,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/8.jpg',
 		'city': {
-			'name': 'Cologne',
+			'name': 'Paris',
 			'location': {
 				'latitude': 50.938361,
 				'longitude': 6.959974,
@@ -652,7 +652,7 @@ const cards: CardProps[] = [
 		'price': 236,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/10.jpg',
 		'city': {
-			'name': 'Cologne',
+			'name': 'Paris',
 			'location': {
 				'latitude': 50.938361,
 				'longitude': 6.959974,
@@ -675,7 +675,7 @@ const cards: CardProps[] = [
 		'price': 247,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/9.jpg',
 		'city': {
-			'name': 'Cologne',
+			'name': 'Paris',
 			'location': {
 				'latitude': 50.938361,
 				'longitude': 6.959974,
@@ -698,7 +698,7 @@ const cards: CardProps[] = [
 		'price': 386,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/18.jpg',
 		'city': {
-			'name': 'Cologne',
+			'name': 'Paris',
 			'location': {
 				'latitude': 50.938361,
 				'longitude': 6.959974,
@@ -721,7 +721,7 @@ const cards: CardProps[] = [
 		'price': 412,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/4.jpg',
 		'city': {
-			'name': 'Cologne',
+			'name': 'Paris',
 			'location': {
 				'latitude': 50.938361,
 				'longitude': 6.959974,
@@ -744,7 +744,7 @@ const cards: CardProps[] = [
 		'price': 237,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/18.jpg',
 		'city': {
-			'name': 'Cologne',
+			'name': 'Paris',
 			'location': {
 				'latitude': 50.938361,
 				'longitude': 6.959974,
@@ -767,7 +767,7 @@ const cards: CardProps[] = [
 		'price': 117,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/8.jpg',
 		'city': {
-			'name': 'Cologne',
+			'name': 'Paris',
 			'location': {
 				'latitude': 50.938361,
 				'longitude': 6.959974,
@@ -790,7 +790,7 @@ const cards: CardProps[] = [
 		'price': 259,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/19.jpg',
 		'city': {
-			'name': 'Cologne',
+			'name': 'Paris',
 			'location': {
 				'latitude': 50.938361,
 				'longitude': 6.959974,
@@ -814,7 +814,7 @@ const cards: CardProps[] = [
 		'price': 342,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/3.jpg',
 		'city': {
-			'name': 'Cologne',
+			'name': 'Paris',
 			'location': {
 				'latitude': 50.938361,
 				'longitude': 6.959974,
@@ -837,7 +837,7 @@ const cards: CardProps[] = [
 		'price': 340,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/19.jpg',
 		'city': {
-			'name': 'Cologne',
+			'name': 'Paris',
 			'location': {
 				'latitude': 50.938361,
 				'longitude': 6.959974,
@@ -860,7 +860,7 @@ const cards: CardProps[] = [
 		'price': 305,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/10.jpg',
 		'city': {
-			'name': 'Cologne',
+			'name': 'Paris',
 			'location': {
 				'latitude': 50.938361,
 				'longitude': 6.959974,
@@ -883,7 +883,7 @@ const cards: CardProps[] = [
 		'price': 250,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/5.jpg',
 		'city': {
-			'name': 'Cologne',
+			'name': 'Paris',
 			'location': {
 				'latitude': 50.938361,
 				'longitude': 6.959974,
