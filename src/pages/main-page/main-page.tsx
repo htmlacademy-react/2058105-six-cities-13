@@ -3,6 +3,8 @@ import Header from '../../components/header/header';
 import { CardProps } from '../../components/card/type';
 import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { cities } from '../../const';
+import OffersEmpty from '../../components/offers-empty/offers-empty';
 
 
 export type MainPageProps = {
@@ -22,8 +24,7 @@ function MainPage({cards}: MainPageProps): JSX.Element {
 		continue;
 	}
 
-	const cities = Object.keys(offersSorted);
-	const [selectedCity, setCity] = useState(cities[0]);
+	const [selectedCity, setCity] = useState<string>(cities[0]);
 
 	return (
 		<div className="page page--gray page--main">
@@ -31,7 +32,7 @@ function MainPage({cards}: MainPageProps): JSX.Element {
 				<title>6 Cities</title>
 			</Helmet>
 			<Header />
-			<main className="page__main page__main--index">
+			<main className={`page__main page__main--index ${!offersSorted[selectedCity] ? 'page__main--index-empty' : ''}`}>
 				<h1 className="visually-hidden">Cities</h1>
 				<div className="tabs">
 					<section className="locations container">
@@ -48,7 +49,7 @@ function MainPage({cards}: MainPageProps): JSX.Element {
 						</ul>
 					</section>
 				</div>
-				<div className="cities">
+				{offersSorted[selectedCity] !== undefined ? <div className="cities">
 					<div className="cities__places-container container">
 						<section className="cities__places places">
 							<h2 className="visually-hidden">Places</h2>
@@ -76,7 +77,8 @@ function MainPage({cards}: MainPageProps): JSX.Element {
 							<section className="cities__map map"></section>
 						</div>
 					</div>
-				</div>
+				</div> : <OffersEmpty />} 			
+
 			</main>
 		</div>
 	);

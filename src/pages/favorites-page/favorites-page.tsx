@@ -10,7 +10,11 @@ type FavoritesProps = {
 function FavoritesPage({cards}: FavoritesProps): JSX.Element {
 	const offersSorted : Record<string, CardProps[]> = {};
 
+
 	for(const card of cards) {
+		if(!card.isFavorite) {
+			continue;
+		}
 		const city = card.city.name;
 		if(city in offersSorted) {
 			offersSorted[city].push(card);
@@ -20,10 +24,11 @@ function FavoritesPage({cards}: FavoritesProps): JSX.Element {
 		continue;
 	}
 
+
 	return (
 		<div className="page">
 			<Helmet>
-				<title>6 Cities</title>
+				<title>favorites offers</title>
 			</Helmet>
 			<Header />
 

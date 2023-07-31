@@ -806,29 +806,7 @@ const cards: CardProps[] = [
 		'isPremium': false,
 		'rating': 3.8
 	},
-	{
-		'id': '42803f0e-59c4-4f49-a54c-890dc0698ff9',
-		'title': 'The house among olive ',
-		'type': 'house',
-		'price': 960,
-		'previewImage': 'https://13.design.pages.academy/static/hotel/3.jpg',
-		'city': {
-			'name': 'Cologne',
-			'location': {
-				'latitude': 50.938361,
-				'longitude': 6.959974,
-				'zoom': 13
-			}
-		},
-		'location': {
-			'latitude': 50.932361,
-			'longitude': 6.960974,
-			'zoom': 16
-		},
-		'isFavorite': false,
-		'isPremium': true,
-		'rating': 2.8
-	},
+	
 	{
 		'id': '32c08fb9-befc-4336-9402-2163d1dc1e77',
 		'title': 'Tile House',
@@ -2308,7 +2286,7 @@ const cards: CardProps[] = [
 		'price': 163,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/11.jpg',
 		'city': {
-			'name': 'Dusseldorf',
+			'name': 'Paris',
 			'location': {
 				'latitude': 51.225402,
 				'longitude': 6.776314,
@@ -2331,7 +2309,7 @@ const cards: CardProps[] = [
 		'price': 379,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/12.jpg',
 		'city': {
-			'name': 'Dusseldorf',
+			'name': 'Paris',
 			'location': {
 				'latitude': 51.225402,
 				'longitude': 6.776314,
@@ -2354,7 +2332,7 @@ const cards: CardProps[] = [
 		'price': 440,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/4.jpg',
 		'city': {
-			'name': 'Dusseldorf',
+			'name': 'Paris',
 			'location': {
 				'latitude': 51.225402,
 				'longitude': 6.776314,
@@ -2377,7 +2355,7 @@ const cards: CardProps[] = [
 		'price': 370,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/18.jpg',
 		'city': {
-			'name': 'Dusseldorf',
+			'name': 'Paris',
 			'location': {
 				'latitude': 51.225402,
 				'longitude': 6.776314,
@@ -2400,7 +2378,7 @@ const cards: CardProps[] = [
 		'price': 331,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/20.jpg',
 		'city': {
-			'name': 'Dusseldorf',
+			'name': 'Paris',
 			'location': {
 				'latitude': 51.225402,
 				'longitude': 6.776314,
@@ -2423,7 +2401,7 @@ const cards: CardProps[] = [
 		'price': 228,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/15.jpg',
 		'city': {
-			'name': 'Dusseldorf',
+			'name': 'Paris',
 			'location': {
 				'latitude': 51.225402,
 				'longitude': 6.776314,
@@ -2446,7 +2424,7 @@ const cards: CardProps[] = [
 		'price': 845,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/3.jpg',
 		'city': {
-			'name': 'Dusseldorf',
+			'name': 'Paris',
 			'location': {
 				'latitude': 51.225402,
 				'longitude': 6.776314,
@@ -2469,7 +2447,7 @@ const cards: CardProps[] = [
 		'price': 457,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/7.jpg',
 		'city': {
-			'name': 'Dusseldorf',
+			'name': 'Paris',
 			'location': {
 				'latitude': 51.225402,
 				'longitude': 6.776314,
@@ -2492,7 +2470,7 @@ const cards: CardProps[] = [
 		'price': 500,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/11.jpg',
 		'city': {
-			'name': 'Dusseldorf',
+			'name': 'Paris',
 			'location': {
 				'latitude': 51.225402,
 				'longitude': 6.776314,
@@ -2515,7 +2493,7 @@ const cards: CardProps[] = [
 		'price': 343,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/13.jpg',
 		'city': {
-			'name': 'Dusseldorf',
+			'name': 'Paris',
 			'location': {
 				'latitude': 51.225402,
 				'longitude': 6.776314,
@@ -2538,7 +2516,7 @@ const cards: CardProps[] = [
 		'price': 125,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/9.jpg',
 		'city': {
-			'name': 'Dusseldorf',
+			'name': 'Paris',
 			'location': {
 				'latitude': 51.225402,
 				'longitude': 6.776314,
@@ -2561,7 +2539,7 @@ const cards: CardProps[] = [
 		'price': 117,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/15.jpg',
 		'city': {
-			'name': 'Dusseldorf',
+			'name': 'Paris',
 			'location': {
 				'latitude': 51.225402,
 				'longitude': 6.776314,
@@ -2584,7 +2562,7 @@ const cards: CardProps[] = [
 		'price': 780,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/14.jpg',
 		'city': {
-			'name': 'Dusseldorf',
+			'name': 'Paris',
 			'location': {
 				'latitude': 51.225402,
 				'longitude': 6.776314,
@@ -2607,7 +2585,7 @@ const cards: CardProps[] = [
 		'price': 281,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/12.jpg',
 		'city': {
-			'name': 'Dusseldorf',
+			'name': 'Paris',
 			'location': {
 				'latitude': 51.225402,
 				'longitude': 6.776314,
@@ -2630,7 +2608,7 @@ const cards: CardProps[] = [
 		'price': 229,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/18.jpg',
 		'city': {
-			'name': 'Dusseldorf',
+			'name': 'Paris',
 			'location': {
 				'latitude': 51.225402,
 				'longitude': 6.776314,
@@ -2653,7 +2631,7 @@ const cards: CardProps[] = [
 		'price': 163,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/9.jpg',
 		'city': {
-			'name': 'Dusseldorf',
+			'name': 'Paris',
 			'location': {
 				'latitude': 51.225402,
 				'longitude': 6.776314,
@@ -2676,7 +2654,7 @@ const cards: CardProps[] = [
 		'price': 437,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/5.jpg',
 		'city': {
-			'name': 'Dusseldorf',
+			'name': 'Paris',
 			'location': {
 				'latitude': 51.225402,
 				'longitude': 6.776314,
@@ -2699,7 +2677,7 @@ const cards: CardProps[] = [
 		'price': 263,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/19.jpg',
 		'city': {
-			'name': 'Dusseldorf',
+			'name': 'Paris',
 			'location': {
 				'latitude': 51.225402,
 				'longitude': 6.776314,
@@ -2722,7 +2700,7 @@ const cards: CardProps[] = [
 		'price': 121,
 		'previewImage': 'https://13.design.pages.academy/static/hotel/9.jpg',
 		'city': {
-			'name': 'Dusseldorf',
+			'name': 'Paris',
 			'location': {
 				'latitude': 51.225402,
 				'longitude': 6.776314,
