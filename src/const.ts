@@ -1,8 +1,4 @@
-const Setting = {
-	OffersCount: 312
-} as const;
-
-const CITIES = [
+const cities = [
 	'Paris',
 	'Cologne',
 	'Brussels',
@@ -24,4 +20,4 @@ const enum AuthorizationStatus {
 	Unknown = 'UNKNOWN',
 }
 
-export {Setting, CITIES, AppRoute, AuthorizationStatus};
+export {cities, AppRoute, AuthorizationStatus};

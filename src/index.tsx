@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './components/app';
-import { Setting } from './const';
+import App from './components/app/app';
+import cards from './mocks/offer-mocks';
+import { fullCards } from './mocks/full-offer-mocks';
 
 const root = ReactDOM.createRoot(
 	document.getElementById('root') as HTMLElement
@@ -9,6 +10,6 @@ const root = ReactDOM.createRoot(
 
 root.render(
 	<React.StrictMode>
-		<App offersCount = {Setting.OffersCount}/>
+		<App cards={cards} fullCards={fullCards}/>
 	</React.StrictMode>
 );

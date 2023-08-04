@@ -1,5 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
-import { AppRoute } from '../const';
+import { AppRoute } from '../../const';
 
 type HeaderProps = {
 	HideNavigation?: boolean;
@@ -8,7 +8,7 @@ type HeaderProps = {
 
 function Header({
 	HideNavigation = false,
-	IsAuthorized = false
+	IsAuthorized = true
 }: HeaderProps) {
 	return (
 		<header className="header">
@@ -44,7 +44,7 @@ function Header({
 								<ul className="header__nav-list">
 									<li className="header__nav-item">
 										<Link className="header__nav-link" to={AppRoute.Login}>
-											<span className="header__signout">Sign out</span>
+											<span className="header__signout">Sign in</span>
 										</Link>
 									</li>
 								</ul>
