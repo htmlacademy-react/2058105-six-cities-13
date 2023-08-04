@@ -10,13 +10,8 @@ function Card ({id, title, price, type, previewImage, isFavorite, isPremium, rat
 		setFavorite(!favorite);
 	}
 
-	const [currentId, setId] = useState(id);
-	const handleMouseEnter = () => {
-		setId(currentId);
-	};
-
 	return (
-		<article className="cities__card place-card" onMouseEnter={handleMouseEnter}>
+		<article className="cities__card place-card">
 			{isPremium && <div className="place-card__mark"><span>Premium</span></div>}
 			<div className="cities__image-wrapper place-card__image-wrapper">
 				<Link to={href}>

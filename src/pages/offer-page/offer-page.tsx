@@ -20,18 +20,13 @@ function OfferPage({fullCards}: OfferPageProps): JSX.Element {
 				<section className="offer">
 					<div className="offer__gallery-container container">
 						<div className="offer__gallery">
-							{fullCard.images.map((image) => 
-								<div key={image} className="offer__image-wrapper">
-									<img className="offer__image" src={image} alt="Photo studio"/>
-								</div>
-							
-							)}
-							
+							{fullCard.images.map((image) =>
+								(<div key={image} className="offer__image-wrapper"><img className="offer__image" src={image} alt="Photo studio"/></div>))}
 						</div>
 					</div>
 					<div className="offer__container container">
 						<div className="offer__wrapper">
-						{fullCard.isPremium && <div className="offer__mark"><span>Premium</span></div>}
+							{fullCard.isPremium && <div className="offer__mark"><span>Premium</span></div>}
 							<div className="offer__name-wrapper">
 								<h1 className="offer__name">
 									{fullCard.title}
@@ -68,13 +63,11 @@ function OfferPage({fullCards}: OfferPageProps): JSX.Element {
 							<div className="offer__inside">
 								<h2 className="offer__inside-title">What&apos;s inside</h2>
 								<ul className="offer__inside-list">
-									{fullCard.goods.map((item) => 
-
-									<li className="offer__inside-item">
-										{item}
-									</li>
+									{fullCard.goods.map((item) =>
+										(<li key={item} className="offer__inside-item">
+											{item}
+										</li>)
 									)}
-									
 								</ul>
 							</div>
 							<div className="offer__host">
@@ -94,7 +87,7 @@ function OfferPage({fullCards}: OfferPageProps): JSX.Element {
 									<p className="offer__text">
 										{fullCard.description}
 									</p>
-									
+
 								</div>
 							</div>
 							<section className="offer__reviews reviews">
@@ -116,6 +109,9 @@ function OfferPage({fullCards}: OfferPageProps): JSX.Element {
 													<span className="visually-hidden">Rating</span>
 												</div>
 											</div>
+											<p className="reviews__text">
+												A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.
+											</p>
 											<p className="reviews__text">
 												A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.
 											</p>

@@ -806,7 +806,7 @@ const cards: CardProps[] = [
 		'isPremium': false,
 		'rating': 3.8
 	},
-	
+
 	{
 		'id': '32c08fb9-befc-4336-9402-2163d1dc1e77',
 		'title': 'Tile House',

@@ -10,7 +10,6 @@ type FavoritesProps = {
 function FavoritesPage({cards}: FavoritesProps): JSX.Element {
 	const offersSorted : Record<string, CardProps[]> = {};
 
-
 	for(const card of cards) {
 		if(!card.isFavorite) {
 			continue;
@@ -39,22 +38,22 @@ function FavoritesPage({cards}: FavoritesProps): JSX.Element {
 						<ul className="favorites__list">
 							{Object.entries(offersSorted).map(([city, offersSorted]) => (
 
-							<li key={city} className="favorites__locations-items">
-								<div className="favorites__locations locations locations--current">
-									<div className="locations__item">
-										<a className="locations__item-link" href={`#${city.toLocaleLowerCase()}`}>
-											<span>Amsterdam</span>
-										</a>
+								<li key={city} className="favorites__locations-items">
+									<div className="favorites__locations locations locations--current">
+										<div className="locations__item">
+											<a className="locations__item-link" href={`#${city.toLocaleLowerCase()}`}>
+												<span>Amsterdam</span>
+											</a>
+										</div>
 									</div>
-								</div>
-								<div className="favorites__places">
-								
-								{offersSorted.map((card) => <FavoriteCard {...card} key={card.id} />)}
-								</div>
-							</li>
+									<div className="favorites__places">
+
+										{offersSorted.map((card) => <FavoriteCard {...card} key={card.id} />)}
+									</div>
+								</li>
 							))}
 
-							
+
 						</ul>
 					</section>
 				</div>

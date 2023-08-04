@@ -2,14 +2,14 @@ import { CardProps } from './type';
 import { Link } from 'react-router-dom';
 
 function FavoriteCard({id, title, price, type, previewImage, isFavorite, isPremium, rating}: CardProps): JSX.Element {
-    const href = `/offer/${id}`;
+	const href = `/offer/${id}`;
 	return (
 		<article className="favorites__card place-card">
-			
-            {isPremium && <div className="place-card__mark"><span>Premium</span></div>}
-			
+
+			{isPremium && <div className="place-card__mark"><span>Premium</span></div>}
+
 			<div className="favorites__image-wrapper place-card__image-wrapper">
-                <Link to={href}>
+				<Link to={href}>
 					<img className="place-card__image" src={previewImage} width="150" height="110" alt="Place image" />
 				</Link>
 			</div>
@@ -33,7 +33,7 @@ function FavoriteCard({id, title, price, type, previewImage, isFavorite, isPremi
 					</div>
 				</div>
 				<h2 className="place-card__name">
-                <Link to={href}>{title}</Link>
+					<Link to={href}>{title}</Link>
 				</h2>
 				<p className="place-card__type">{type}</p>
 			</div>
