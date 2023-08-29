@@ -4,6 +4,7 @@ import { CardProps } from '../../components/card/type';
 import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { cities } from '../../const';
+import Map from '../../components/map/map';
 
 export type MainPageProps = {
 	cards: CardProps[];
@@ -72,7 +73,7 @@ function MainPage({cards}: MainPageProps): JSX.Element {
 							</div>
 						</section>
 						<div className="cities__right-section">
-							<section className="cities__map map"></section>
+							<Map />
 						</div>
 					</div>
 				</div> : <div className="cities">
