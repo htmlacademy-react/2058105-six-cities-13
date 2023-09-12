@@ -5,14 +5,13 @@ import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { cities } from '../../const';
 import Map from '../../components/map/map';
-
 export type MainPageProps = {
 	cards: CardProps[];
 }
 
 function MainPage({cards}: MainPageProps): JSX.Element {
 	const offersSorted : Record<string, CardProps[]> = {};
-
+	  
 	for(const card of cards) {
 		const city = card.city.name;
 		if(city in offersSorted) {
@@ -35,7 +34,7 @@ function MainPage({cards}: MainPageProps): JSX.Element {
 				<h1 className="visually-hidden">Cities</h1>
 				<div className="tabs">
 					<section className="locations container">
-						<ul className="locations__list tabs__list">
+						<ul className="locations__list tabs__list ">
 							{cities.map((city) => (
 								<li key={city} className="locations__item">
 									<a className={`locations__item-link tabs__item ${city === selectedCity ? 'tabs__item--active' : ''}`}
@@ -73,7 +72,7 @@ function MainPage({cards}: MainPageProps): JSX.Element {
 							</div>
 						</section>
 						<div className="cities__right-section">
-							<Map />
+						<Map />
 						</div>
 					</div>
 				</div> : <div className="cities">
@@ -86,7 +85,7 @@ function MainPage({cards}: MainPageProps): JSX.Element {
 						</section>
 						<div className="cities__right-section"></div>
 					</div>
-                                                         </div>}
+        		</div>}
 
 			</main>
 		</div>
